@@ -1,13 +1,15 @@
 *{
     margin:0;
-
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(to top, rgba(0, 197, 251, 0.57) 0%, rgba(0, 90, 234, 0.504) 100%);
+  background-image: linear-gradient(to top, rgba(0, 197, 251, 0.29) 0%, rgba(0, 90, 234, 0.36) 100%);
 }
 #header {
- height: 50vh;
- background-image: url(/src/img/pokémon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%),url(/src/img/pokebola.png);
+ height: 60vh;
+ background-image: url(/src/img/pokémon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(/src/img/pokebola.png);
  background-repeat: no-repeat;
  background-position: top;
+ background-attachment: fixed;
 }
