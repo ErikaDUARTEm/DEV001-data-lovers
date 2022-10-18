@@ -1,12 +1,9 @@
 import pokemon from './data/pokemon/pokemon.js';
-const data = pokemon;
-const arrayD = data.pokemon;
 
-export function personajes(pokemon){
-  return [pokemon.name, pokemon.img, pokemon.resistant, 
-    pokemon.weaknesses, pokemon.encounter["base-capture-rate"], 
-    pokemon.encounter["base-flee-rate"]]
-}
+
+
+          
+         
 
 /*export function fortaleza(pokemon){
   return [pokemon.resistant];

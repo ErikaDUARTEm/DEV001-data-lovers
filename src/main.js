@@ -1,31 +1,36 @@
 import pokemon from './data.js';
-import {personajes} from './data.js';
+
 
 const data = pokemon;
 const arrayD = data.pokemon;
- //arrayD.forEach(pokemon => pokemon[]) 
- 
- let pokemones = arrayD.map(personajes).join(" ");
- console.log(arrayD);
- 
+const $ = (selector) => document.querySelector(selector);
 
-    
  
- 
- /*let filtro = pokemon.name;
- function filterData(pokemones, filtro) {
-    if(filtro === pokemones){
-        return pokemones[filtro];
-    } else if (filtro != pokemones){
-       return console.log("El nombre del pokemon no existe");
-    }
- };
- console.log(filterData());*/
- 
+ const tarjetas = (pokemon) => {
+   const card =`
+   <article class="card">
+   <div class="card-imagen">
+      <img src="${pokemon.img}">
+   </div>
+   <div class="card-body-title">
+      <p>${pokemon.name}</p>
+   </div>
+   </article>`
+   return(card);
+ }
+ arrayD.forEach(element => {
+   console.log(element)
    
-    
+   $(".flex").insertAdjacentHTML("beforeend", tarjetas(element))
+})
 
- 
 
- document.querySelector(".tarjetas").innerHTML= pokemones;
- 
+        
+     
+
+/*$(".cards").innerHTML= pokemones;
+$(".cards").innerHTML= fotos;
+$(".cards").innerHTML= fuerza;
+$(".cards").innerHTML= debil;
+$(".cards").innerHTML= captura;
+$(".cards").innerHTML= huida;*/
