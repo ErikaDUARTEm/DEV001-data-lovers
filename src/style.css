@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 main {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 150%);
  
@@ -31,6 +34,9 @@ main {
   -o-border-radius: 5;
   box-shadow: 8px 8px 8px #3308677b;
   
+}
+.card:hover{
+background-color: rgba(105, 9, 202, 0.484);
 }
 .card-imagen{
   margin: 0 5px 0 5px;
