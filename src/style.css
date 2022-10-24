@@ -13,7 +13,7 @@ main {
 } 
 
 #header {
- height: 50vh;
+ height: 45vh;
  background-image: url(/src/img/pokémon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(/src/img/pokebola.png);
  background-repeat: no-repeat;
  background-position: top;
@@ -55,4 +55,22 @@ background-color: rgba(105, 9, 202, 0.484);
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px){
+
+  .flex{
+    max-width: 100%;
+    height: auto;
+    
+  }
+  #header{
+    height: 42vh;
+  }
+}
+@media screen and (max-width:360px){
+  #header {
+    background-size: contain;
+    height: 33vh;
+  } 
 }

@@ -1,17 +1,11 @@
 import pokemon from './data/pokemon/pokemon.js';
+const data = pokemon;
 
-
-
-          
-         
-
-/*export function fortaleza(pokemon){
-  return [pokemon.resistant];
+ function arrayD() {
+   const datos = data.pokemon;
+   return datos;
 }
 
-export function debil(pokemon){
-  return [pokemon.weaknesses];
-}*/
   //Filtra la data
 /*filterData(data, condition) {
 
@@ -34,4 +28,4 @@ export function debil(pokemon){
 //calculos estadisticos
   computeStats(data)
 }*/
-export default pokemon;
+export default arrayD;

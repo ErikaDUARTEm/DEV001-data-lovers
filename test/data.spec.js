@@ -1,18 +1,19 @@
-import { example, anotherExample } from '../src/data.js';
+import arrayD from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+
+describe('arrayD', () => {
+  it('Debe ser una function', () => {
+    expect(typeof arrayD).toEqual('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('Debe retornar un array con 251 pokemones', () => {
+    expect(arrayD()).toHaveLength(251);
   });
 });
 
 
-describe('anotherExample', () => {
+/*describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -21,3 +22,4 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+*/
