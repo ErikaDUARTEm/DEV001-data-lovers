@@ -14,4 +14,4 @@
 ## 6. Interfaz de Usuario
   Se implemento la vista de los pokemones en tarjetas individuales para que fuera fácil de visualizar y en el caso de visualizarlo en un computador de escritorio, al pasar el puntero del mouse por encima de la tarjeta, ésta cambia de color; y en el caso de visualizarlo en un móvil al dar click a la tarjeta ésta cambia de color. Además para ver todas las tarjetas solo se debe hacer skroll.
 ## 7. Consideraciones Importantes
-  App pokémon tiene un diseño responsive, lo que hace que pueda visualizarse en computador de escritorio y en dispositivos móviles; Además se debe tener en cuenta que no esta habilitada ninguna funcionalidad adicional; SOlo se visualizan las tarjetas con los pokemones haciendo skroll.
+  App pokémon tiene un diseño responsive, lo que hace que pueda visualizarse en computador de escritorio y en dispositivos móviles; Además se debe tener en cuenta que no esta habilitada ninguna funcionalidad adicional; Solo se visualizan las tarjetas con los pokemones haciendo skroll.
