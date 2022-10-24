@@ -14,7 +14,7 @@ main {
 
 #header {
  height: 45vh;
- background-image: url(/src/img/pokémon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(/src/img/pokebola.png);
+ background-image: url(img/pokémon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(img/pokebola.png);
  background-repeat: no-repeat;
  background-position: top;
  background-attachment: fixed;
