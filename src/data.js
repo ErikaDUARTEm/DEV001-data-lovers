@@ -1,31 +1,42 @@
 import pokemon from './data/pokemon/pokemon.js';
 const data = pokemon;
+export const datos2= data.pokemon;
 
- function arrayD() {
+function arrayD() {
    const datos = data.pokemon;
    return datos;
 }
+const ordenarAz = () => {
+  const ordenar = datos2.sort((a, b) =>{
+    if(a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name){
+      return 1;
+    } else {
+      return 0;
+     }
+  });
+  return ordenar;
+}
 
-  //Filtra la data
-/*filterData(data, condition) {
 
+ /*export function ordenarZa (a, b) {
+  if(a.name > b.name) {
+    return -1;
   }
-//ordena la data
-  sortData(data, sortBy, sortOrder)
-  arrayD.sort((a, b) => {
-      const nameA = a.name.toLowerCase();
-      const nameB = b.name.toLowerCase();
-      if (nameA < nameB){
-        return -1;
-      }
-      if (nameA > nameB){
-        return 1;
-      } else {
-        return 0;
-      }
-    }); 
-
-//calculos estadisticos
-  computeStats(data)
-}*/
-export default arrayD;
+  if (a.name < b.name){
+    return 1;
+  } else {
+    return 0;
+   }
+ };
+ */
+//Filtra la data
+  /*filterData(data, condition){
+  
+  }*/
+/*calculos estadisticos
+  computeStats(data);
+*/
+export {arrayD, ordenarAz};

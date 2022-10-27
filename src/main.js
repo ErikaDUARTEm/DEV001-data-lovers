@@ -1,4 +1,4 @@
-import arrayD from './data.js';
+import {arrayD, ordenarAz, datos2} from './data.js';
 
 const $ = (selector) => document.querySelector(selector);
 const tarjetas = (pokemon) => {
@@ -14,5 +14,23 @@ const tarjetas = (pokemon) => {
    return(card);
  }
 arrayD().forEach(element => {   
-   $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
-})
+   $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));  
+});
+
+
+$(".ordenar").addEventListener("click", () => {
+   $(".flex").innerHTML = "";
+   const arrayOrdenado = ordenarAz();
+   arrayOrdenado.forEach(element => {
+      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
+   })
+});
+
+
+$(".ordenar2").addEventListener("click", () => {
+   $(".flex").innerHTML = "";
+   const arrayDesordenado = datos2.reverse();
+   arrayDesordenado.forEach(element => {
+      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
+   })
+});

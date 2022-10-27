@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -35,7 +36,7 @@ main {
   box-shadow: 8px 8px 8px #3308677b;
   
 }
-.card:hover{
+.card:hover  {
 background-color: rgba(105, 9, 202, 0.484);
 }
 .card-imagen{
@@ -73,4 +74,24 @@ background-color: rgba(105, 9, 202, 0.484);
     background-size: contain;
     height: 33vh;
   } 
+}
+.ordenar, .ordenar2{
+  margin: 5px 10px 10px 30px;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: #1215d1;
+  box-shadow: 8px 8px 5px#daf10a;
+  text-align: center;
+  font-family:'Carter One', cursive;
+  color:#f4f1f8;
+  text-shadow:3px 3px 5px #0c1cf8;
+  font-size: 17px;
+}
+.ordenar:hover  {
+  background-color: rgb(238, 255, 7);
+  }
+.ordenar2:hover{
+  background-color: rgb(238, 255, 7);
 }
