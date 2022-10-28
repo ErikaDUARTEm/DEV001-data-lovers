@@ -1,25 +1,36 @@
-import arrayD from '../src/data.js';
-
-
+import {arrayD, ordenarAz, ordenarZa} from '../src/data.js';
 
 describe('arrayD', () => {
-  it('Debe ser una function', () => {
+  it('Debería ser una function', () => {
     expect(typeof arrayD).toEqual('function');
   });
-
-  it('Debe retornar un array con 251 pokemones', () => {
+  it('Debería retornar un array con 251 pokemones', () => {
     expect(arrayD()).toHaveLength(251);
   });
 });
 
-
-/*describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe('ordenarAz', () => {
+  it('Debería ser una function', () => {
+    expect(typeof ordenarAz).toBe('function');
   });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('Debería retornar un array ordenado de la A a la Z', () => {
+     const nombrePruebas = [
+      {name: "Maria"}, {name: "Luisa"}, {name:"Christian"}  
+    ]
+    const resultado = [{name:"Christian"}, {name: "Luisa"}, {name: "Maria"}]  
+    expect(ordenarAz(nombrePruebas)).toEqual(resultado)
+   })
+ });
+ 
+ describe('ordenarZa', () => {
+  it('Debería ser una function', () => {
+    expect(typeof ordenarZa).toBe('function');
   });
-});
-*/
+  it('Debería retornar un array ordenado de la Z a la A', () => {
+     const nombres = [
+      {name:"Christian"}, {name: "Luisa"}, {name: "Maria"}  
+    ]
+    const resultado = [{name: "Maria"}, {name: "Luisa"}, {name: "Christian"}]  
+    expect(ordenarZa(nombres)).toEqual(resultado)
+   })
+ });

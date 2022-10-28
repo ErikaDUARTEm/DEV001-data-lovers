@@ -6,8 +6,8 @@ function arrayD() {
    const datos = data.pokemon;
    return datos;
 }
-const ordenarAz = () => {
-  const ordenar = datos2.sort((a, b) =>{
+const ordenarAz = (arrayAOrdenar = datos2) => {
+  const ordenar = arrayAOrdenar.sort((a, b) =>{
     if(a.name < b.name) {
       return -1;
     }
@@ -19,8 +19,8 @@ const ordenarAz = () => {
   });
   return ordenar;
 }
-const ordenarZa = () => {
-  const ordenar = datos2.sort((a, b) =>{
+const ordenarZa = (arrayDesordenar = datos2) => {
+  const ordenar = arrayDesordenar.sort((a, b) =>{
     if(a.name > b.name) {
       return -1;
     }
@@ -32,11 +32,6 @@ const ordenarZa = () => {
   });
   return ordenar;
 }
- //Filtra la data
-  /*filterData(data, condition){
-  
-  }*/
-/*calculos estadisticos
-  computeStats(data);
-*/
+
+
 export {arrayD, ordenarAz, ordenarZa};
