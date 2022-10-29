@@ -48,7 +48,6 @@ main {
   box-shadow: 8px 8px 8px #3308677b;
  
 }
-
 @-webkit-keyframes card {
   from {
     box-shadow: 0 0 5px rgb(245, 247, 126), 0 0 10px rgb(235, 243, 120), 0 0 15px #5780f1, 0 0 20px #214097, 0 0 25px #111ed8, 0 0 30px #092b75, 0 0 35px #020f46;

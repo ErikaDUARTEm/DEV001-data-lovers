@@ -23,7 +23,6 @@ $(".ordenar").addEventListener("click", () => {
    $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
  })
 });
-
 $(".ordenar2").addEventListener("click", () => {
    $(".flex").innerHTML = "";
    const arrayDesordenado = ordenarZa();
@@ -31,5 +30,5 @@ $(".ordenar2").addEventListener("click", () => {
       $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
    })  
 });
-console.log(arrayD());
+
 
