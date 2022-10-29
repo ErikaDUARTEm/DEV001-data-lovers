@@ -16,3 +16,9 @@
 ## 7. Consideraciones Importantes.
   App pokémon tiene un diseño responsive, lo que hace que pueda visualizarse en computador de escritorio y en dispositivos móviles; Además se debe tener en cuenta que no esta habilitada ninguna funcionalidad adicional; Solo se visualizan las tarjetas con los pokemones haciendo skroll.
 ## 8. Prototipo de baja fidelidad Versión 1.2.
+![Versión Desktop](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/Prototipo%20de%20baja%20fidelidad%20Hu2%20(1).jpg)
+![Versión Móvil](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/Prototipo%20de%20baja%20fidelidad%20Movil%20Hu2%20(1).jpg)
+## 9. Prototipo de alta fidelidad Versión 1.2.
+[Prototipo Versión Desktop y Móvil alta fidelidad en figma](https://www.figma.com/file/tJoTR46xS2WLpiRwyRjAUp/POKEMON-HU2?node-id=1%3A32)
+## 10. Actualización versión 1 a versión 1.2.
+   Se agregaron dos botones donde puedes ordenar los pokemones por orden alfabético de la A-Z o de la Z-A con solo un click en el botón.
