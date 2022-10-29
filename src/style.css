@@ -10,12 +10,11 @@
 }
 main {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 150%);
- 
 } 
 
 #header {
  height: 45vh;
- background-image: url(/src/img/pokémon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(/src/img/pokebola.png);
+ background-image: url(https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/pok%C3%A9mon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/pokebola.png);
  background-repeat: no-repeat;
  background-position: top;
  background-attachment: fixed;
@@ -46,7 +45,6 @@ main {
   -ms-border-radius: 5;
   -o-border-radius: 5;
   box-shadow: 8px 8px 8px #3308677b;
- 
 }
 @-webkit-keyframes card {
   from {
@@ -96,8 +94,7 @@ animation: card 1s ease-in-out infinite alternate;
     width: 400px;
     height: 20px;
     margin: 5px 20px 50px 40px;
-    display: flex;
-   
+    display: flex; 
  }
 }
 @media screen and (max-width:500px){
