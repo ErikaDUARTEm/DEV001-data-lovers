@@ -19,10 +19,12 @@ main {
  background-position: top;
  background-attachment: fixed;
  box-shadow: 20px #6f0edf;
- animation: header 1s ease-in-out infinite alternate;
- -webkit-animation: header 1s ease-in-out infinite alternate;
 }
-@-webkit-keyframes header {
+.encabezado{
+  animation: encabezado 1s ease-in-out infinite alternate;
+  -webkit-animation: encabezado 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes encabezado {
   from {
     box-shadow: 0 0 10px rgb(245, 247, 126), 0 0 20px rgb(235, 243, 120), 0 0 30px #5780f1, 0 0 40px #214097, 0 0 50px #111ed8, 0 0 60px #092b75, 0 0 70px #020f46;
   }
