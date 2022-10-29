@@ -3,7 +3,7 @@
 ## 1. Preambulo 
   En esta aplicación podrás conocer todos los pokemones con imagen y nombre.
 ## 2. Prototipo de baja fidelidad Versión 1.
-![versión Desktop](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipoDesktop.jpg)
+![versión Desktop](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipoDesktop%20(1).jpg)
 ![versión móvil](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipoMovil.jpg)
 ## 3. Prototipo de alta fidelidad Versión 1.
 [Prototipo de alta fidelidad desktop y movil en figma](https://www.figma.com/file/cpOcPiDeLYTKjY4ARE5Sj9/pok%C3%A9mon?node-id=0%3A1 "Prototipo figma")
