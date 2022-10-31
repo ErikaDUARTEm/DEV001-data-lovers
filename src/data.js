@@ -34,4 +34,5 @@ const ordenarZa = (arrayDesordenar = datos2) => {
 }
 
 
+
 export {arrayD, ordenarAz, ordenarZa};
