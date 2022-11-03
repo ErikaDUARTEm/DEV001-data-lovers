@@ -1,4 +1,7 @@
-import {arrayD, ordenarAz, ordenarZa, datos2} from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
+import {arrayD, ordenarAz, ordenarZa, nombres, tipoHierba} from './data.js';
+
+
 const $ = (selector) => document.querySelector(selector);
 const tarjetas = (pokemon) => {
    const card =`
@@ -12,28 +15,27 @@ const tarjetas = (pokemon) => {
    </article>`
    return(card);
  }
-arrayD().forEach(element => {   
+   arrayD(pokemon).forEach(element => {   
    $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));  
-});
-
+  });
 $(".ordenar").addEventListener("click", () => {
    $(".flex").innerHTML = "";
-   const arrayOrdenado = ordenarAz();
+   const arrayOrdenado = ordenarAz(pokemon.pokemon);
    arrayOrdenado.forEach(element => {
    $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
  })
 });
 $(".ordenar2").addEventListener("click", () => {
    $(".flex").innerHTML = "";
-   const arrayDesordenado = ordenarZa();
+   const arrayDesordenado = ordenarZa(pokemon.pokemon);
    arrayDesordenado.forEach(element => {
       $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
    })  
 });
-const dato = datos2;
-const tipos = (pokemon) => {
+const tarjetasDetalles = (pokemon) => {
    const cardtipos =`
    <article class="cardTipos">
+   <div><i class="fa-solid fa-x" id="cerrar"></i></div>
    <div class="cardTipos-imagen">
       <img src="${pokemon.img}">
    </div>
@@ -46,39 +48,73 @@ const tipos = (pokemon) => {
    <div class ="resistencia">
       <p>Fortalezas: ${pokemon.resistant}</p>
    </div>
+   <div class = "debilidades">
+      <p> Debilidades: ${pokemon.weaknesses}</p>
+   </div>
    <div class ="about">
-      <p>Descripción: ${pokemon.about}</p>
+      <p>Descripción:<br> ${pokemon.about}</p>
    </div>
    </article>`
    return(cardtipos);
  }
+ 
+const buscador = $(".buscador");
+const cards = ()=>{
+   $("#cerrar").addEventListener("click", ()=>{
+      arrayD(pokemon).forEach (element => {
+      $(".flex2").innerHTML ="";
+      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element)); 
+      })
+   });
+  };
+const nombres2 = () => {
+   let input= buscador.value.toLowerCase();
+   nombres(pokemon, input).forEach (element => {
+   $(".flex").innerHTML =""; 
+   $(".flex2").innerHTML="";
+   $(".flex2").insertAdjacentHTML("beforeend", tarjetasDetalles(element));
+    })
+    if(nombres(pokemon,input).length === 1){
+      cards();
+    }
+   }
+  $(".buscador").addEventListener("keydown", nombres2);
 
- const tipoHierba =  function() {
-   let todos = dato.filter( type => { 
-      let todas = (type.type[0] === "grass") || (type.type[1] === "grass");
-      return todas;
-  })
-   return todos;
-}
-tipoHierba();
- //console.log(tipoHierba());
+  
+  console.log(tipoHierba(pokemon));
+/*const datos = pokemon.pokemon.filter( name => {
+   return name.name === pokemon;
+})
+console.log(datos);
+*/
+// codigo q funciona pero sin funcion pura
 
- const buscador = $(".buscador");
- const nombres = function() {
+
+/*const nombres = function() {
    let todos = dato.filter( name => {
-      return name.name === buscador.value;   
+   return name.name === buscador.value;
     })
     return todos;
  }
 const nombres2 = () => {
    nombres().forEach (element => {
    $(".flex").innerHTML =""; 
-   $(".flex").insertAdjacentHTML("beforeend",tipos(element));
-  }) 
-}
+   $(".flex2").insertAdjacentHTML("beforeend",informacion(element));
+    })
+  }
+
   $(".buscador").addEventListener("keydown", nombres2);
-console.log(nombres2());
-/*const fortalezas = dato.find( resistant => {
-    return resistant.resistant[0];
- });
- console.log(fortalezas);*/
+ 
+  const cards = ()=>{
+   $(".flex2").addEventListener("click", ()=>{
+      arrayD().forEach (element => {
+      $(".flex2").innerHTML ="";
+      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element)); 
+      })
+   });
+  };
+  cards();
+*/
+ 
+ //g(tipoHierba());
+ //g(dato);
