@@ -39,7 +39,7 @@ const nombres = function(data, input) {
    })
    return todos;
 }
-const tipoHierba =  function(data, input) {
+const filterTipos =  function(data, input) {
   let todos = data.pokemon.filter( type => { 
      let todas = (type.type[0] === input || (type.type[1] === input));
      return todas;
@@ -48,4 +48,4 @@ const tipoHierba =  function(data, input) {
 }
 
 
-export {arrayD, ordenarAz, ordenarZa, nombres,tipoHierba};
+export {arrayD, ordenarAz, ordenarZa, nombres,filterTipos};

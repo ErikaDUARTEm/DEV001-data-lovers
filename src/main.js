@@ -1,5 +1,5 @@
 import pokemon from './data/pokemon/pokemon.js';
-import {arrayD, ordenarAz, ordenarZa, nombres,tipoHierba} from './data.js';
+import {arrayD, ordenarAz, ordenarZa, nombres, filterTipos} from './data.js';
 
 
 const $ = (selector) => document.querySelector(selector);
@@ -103,14 +103,27 @@ const nombres2 = () => {
    </article>`
    return(card);
  }
-   
+   const cerrarTipos = () => {
+    let valorTodos = $("#selectorTipos").value;
+    if(valorTodos == "todos"){
+      arrayD(pokemon).forEach (element => {
+         $(".flex2").innerHTML ="";
+         $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
+    })
+   }
+ }
   $("#selectorTipos").addEventListener("change", () =>{
+          $(".flex2").innerHTML="";
      let valorOpciones = $("#selectorTipos").value;
-      if(valorOpciones == "grass"){
-          tipoHierba(pokemon, valorOpciones).forEach(element =>  {
+          filterTipos(pokemon, valorOpciones).forEach(element =>  {
              $(".flex").innerHTML="";
              $(".flex2").insertAdjacentHTML("beforeend", tarjetasTipos(element));
-       });
-       cards();    
-    }
+    })
+    cerrarTipos();
  })
+
+  /* if(valorOpciones == "grass"){
+          filterTipos(pokemon, valorOpciones).forEach(element =>  {
+             $(".flex").innerHTML="";
+             $(".flex2").insertAdjacentHTML("beforeend", tarjetasTipos(element));
+       });*/   
