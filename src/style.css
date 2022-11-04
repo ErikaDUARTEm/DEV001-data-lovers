@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 *{
   margin:0;
   padding: 0;
@@ -15,7 +16,7 @@ main {
 
 #header {
  width: 100%;
- height: 40vh;
+ height: 35vh;
  background-image: url(img/pok%C3%A9mon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(img/pokebola.png);
  background-repeat: no-repeat;
  background-position: top;
@@ -36,7 +37,7 @@ main {
   }
 }
 .flex {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -77,15 +78,16 @@ animation: card 1s ease-in-out infinite alternate;
 }
 .card-body-title {
   text-align: center;
-  font-family:'Carter One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 1px;
   color:#f4f1f8;
   text-shadow:5px 5px 5px #7e05f7;
-  font-size: 20px;
+  font-size: 23px;
 }
 .ordenar, .ordenar2{
-  margin: 5px 2px 2px 2px;
-  width: 200px;
-  height: 60px;
+  margin: 10px 2px 2px 2px;
+  width: 180px;
+  height: 50px;
   border: none;
   border-radius: 30px;
   background-color: #1215d1;
@@ -122,7 +124,7 @@ animation: card 1s ease-in-out infinite alternate;
   height: 50px;
   background-color: rgb(236, 236, 247);
   border-radius: 30px;
-  margin: 10px 10px 10px 30px;
+  margin: 10px 8px 10px 15px;
   border: none;
   box-shadow: 8px 8px 5px #e5fd09c7;
   text-align: center;
@@ -163,10 +165,10 @@ animation: card 1s ease-in-out infinite alternate;
 }
 .cardTipos-title{
   margin: 0 2px 2px 8px;
-  font-family:'Carter One', cursive;
+  font-family: 'Luckiest Guy', cursive;
   text-shadow:5px 5px 5px #7e05f7;
   font-size: 30px;
-
+  letter-spacing: 1px;
 }
 .tipo{
   margin: 0 2px 2px 8px;
@@ -178,6 +180,7 @@ animation: card 1s ease-in-out infinite alternate;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  letter-spacing: 1px;
   
 } 
 .about{
@@ -186,7 +189,7 @@ animation: card 1s ease-in-out infinite alternate;
   margin: 0 5px 2px 8px;
   border-radius: 10px;
   background-color: #2d09fa91;
-  
+  letter-spacing: 1px;
 } 
 .resistencia{
   background-color: #2d09fa91;
@@ -195,6 +198,7 @@ animation: card 1s ease-in-out infinite alternate;
   width: 100%;
   height: max-content;
   color:greenyellow;
+  letter-spacing: 1px;
 }
 .debilidades{
   background-color: #2d09fa91;
@@ -203,7 +207,7 @@ animation: card 1s ease-in-out infinite alternate;
   width: 100%;
   height: max-content;
   color: rgb(231, 66, 16);
-  
+  letter-spacing: 1px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -294,6 +298,7 @@ animation: card 1s ease-in-out infinite alternate;
 }
 .flex2{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   
@@ -301,4 +306,35 @@ animation: card 1s ease-in-out infinite alternate;
 #cerrar{
   display: flex;
   flex-direction: row-reverse;
+}
+.selectorTipos{
+  width: 90px;
+  height: 50px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 35px;
+  border: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  box-shadow: 8px 8px 5px #e5fd09c7;
+  text-shadow: 5px 5px 5px #0f0f0fef;
+  font-family:'Carter One', cursive;
+  color:rgb(243, 236, 236);
+  background-color:#1215d1;
+  font-size: 15px;
+  text-align: center;
+}
+.card-body-tipo{
+  color: rgb(69, 39, 6);
+  margin-top: 2px;
+  background-color: rgb(3, 244, 128);
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }

@@ -9,11 +9,11 @@ const ordenarAz = (data) => {
     if(a.name < b.name) {
       return -1;
     }
-  /*  if (a.name > b.name){
+    if (a.name > b.name){
       return 1;
     } else {
       return 0;
-     }*/
+     }
   });
   return ordenar;
 }
@@ -23,11 +23,11 @@ const ordenarZa = (data) => {
     if(a.name > b.name) {
       return -1;
     }
-   /* if (a.name < b.name){
+    if (a.name < b.name){
       return 1;
     } else {
       return 0;
-     }*/
+     }
   });
   return ordenar;
 }
@@ -39,11 +39,13 @@ const nombres = function(data, input) {
    })
    return todos;
 }
-const tipoHierba =  function(data) {
+const tipoHierba =  function(data, input) {
   let todos = data.pokemon.filter( type => { 
-     let todas = (type.type[0] === "grass") || (type.type[1] === "grass");
+     let todas = (type.type[0] === input || (type.type[1] === input));
      return todas;
  })
   return todos;
 }
-export {arrayD, ordenarAz, ordenarZa, nombres, tipoHierba};
+
+
+export {arrayD, ordenarAz, ordenarZa, nombres,tipoHierba};

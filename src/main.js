@@ -1,8 +1,9 @@
 import pokemon from './data/pokemon/pokemon.js';
-import {arrayD, ordenarAz, ordenarZa, nombres, tipoHierba} from './data.js';
+import {arrayD, ordenarAz, ordenarZa, nombres,tipoHierba} from './data.js';
 
 
 const $ = (selector) => document.querySelector(selector);
+// tarjetas de la pantalla principal
 const tarjetas = (pokemon) => {
    const card =`
    <article class="card">
@@ -15,9 +16,11 @@ const tarjetas = (pokemon) => {
    </article>`
    return(card);
  }
+ // recorre data y crea las tarjetas de la pantalla principal
    arrayD(pokemon).forEach(element => {   
    $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));  
   });
+  // evento que activa el botón de ordenar de la Az
 $(".ordenar").addEventListener("click", () => {
    $(".flex").innerHTML = "";
    const arrayOrdenado = ordenarAz(pokemon.pokemon);
@@ -25,6 +28,7 @@ $(".ordenar").addEventListener("click", () => {
    $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
  })
 });
+// evento que activa el botón de ordenar de la Za
 $(".ordenar2").addEventListener("click", () => {
    $(".flex").innerHTML = "";
    const arrayDesordenado = ordenarZa(pokemon.pokemon);
@@ -32,6 +36,7 @@ $(".ordenar2").addEventListener("click", () => {
       $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
    })  
 });
+// tarjeta que se abre al buscar por nombre.
 const tarjetasDetalles = (pokemon) => {
    const cardtipos =`
    <article class="cardTipos">
@@ -43,7 +48,8 @@ const tarjetasDetalles = (pokemon) => {
       <p>${pokemon.name}  ${pokemon.num}</p>
    </div>
    <div class="tipo">
-      <p>Tipo: ${pokemon.type}</p>
+     <p> Tipo: ${pokemon.type}.</p>
+     <p> Altura: ${pokemon.size.height} Peso: ${pokemon.size.weight}</p>
    </div>
    <div class ="resistencia">
       <p>Fortalezas: ${pokemon.resistant}</p>
@@ -57,16 +63,17 @@ const tarjetasDetalles = (pokemon) => {
    </article>`
    return(cardtipos);
  }
- 
 const buscador = $(".buscador");
+// Esta funcion es para que al darle click a la X de la tarjeta detallada, cierre y envie a todos las tarjetas.
 const cards = ()=>{
    $("#cerrar").addEventListener("click", ()=>{
       arrayD(pokemon).forEach (element => {
       $(".flex2").innerHTML ="";
-      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element)); 
+      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
       })
    });
   };
+  // funcion que llama al filtro nombres y lo conecta con la barra buscadora.
 const nombres2 = () => {
    let input= buscador.value.toLowerCase();
    nombres(pokemon, input).forEach (element => {
@@ -77,44 +84,33 @@ const nombres2 = () => {
     if(nombres(pokemon,input).length === 1){
       cards();
     }
-   }
+   };
+
   $(".buscador").addEventListener("keydown", nombres2);
-
-  
-  console.log(tipoHierba(pokemon));
-/*const datos = pokemon.pokemon.filter( name => {
-   return name.name === pokemon;
-})
-console.log(datos);
-*/
-// codigo q funciona pero sin funcion pura
-
-
-/*const nombres = function() {
-   let todos = dato.filter( name => {
-   return name.name === buscador.value;
-    })
-    return todos;
+  //Filtro por tipo hierba 
+  const tarjetasTipos = (pokemon) => {
+   const card =`
+   <article class="card">
+   <div class="card-imagen">
+      <img src="${pokemon.img}">
+   </div>
+   <div class="card-body-title">
+      <p>${pokemon.name}</p>
+   </div>
+   <div class="card-body-tipo">
+      <p>${pokemon.type}</p>
+   </div>
+   </article>`
+   return(card);
  }
-const nombres2 = () => {
-   nombres().forEach (element => {
-   $(".flex").innerHTML =""; 
-   $(".flex2").insertAdjacentHTML("beforeend",informacion(element));
-    })
-  }
-
-  $(".buscador").addEventListener("keydown", nombres2);
- 
-  const cards = ()=>{
-   $(".flex2").addEventListener("click", ()=>{
-      arrayD().forEach (element => {
-      $(".flex2").innerHTML ="";
-      $(".flex").insertAdjacentHTML("beforeend", tarjetas(element)); 
-      })
-   });
-  };
-  cards();
-*/
- 
- //g(tipoHierba());
- //g(dato);
+   
+  $("#selectorTipos").addEventListener("change", () =>{
+     let valorOpciones = $("#selectorTipos").value;
+      if(valorOpciones == "grass"){
+          tipoHierba(pokemon, valorOpciones).forEach(element =>  {
+             $(".flex").innerHTML="";
+             $(".flex2").insertAdjacentHTML("beforeend", tarjetasTipos(element));
+       });
+       cards();    
+    }
+ })
