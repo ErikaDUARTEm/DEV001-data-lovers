@@ -16,9 +16,9 @@ describe('ordenarAz', () => {
   });
   it('Debería retornar un array ordenado de la A a la Z', () => {
      const nombrePruebas = [
-      {name: "Maria"}, {name: "Luisa"}, {name:"Christian"}  
+      {name: "Luisa"}, {name: "Luisa"}, {name: "Maria"}, {name:"Christian"}  
     ]
-      const resultado = [{name:"Christian"}, {name: "Luisa"}, {name: "Maria"}]  
+      const resultado = [{name:"Christian"}, {name: "Luisa"}, {name: "Luisa"}, {name: "Maria"}]  
       expect(ordenarAz(nombrePruebas)).toEqual(resultado)
    })
 })
@@ -29,14 +29,24 @@ describe('ordenarAz', () => {
   });
   it('Debería retornar un array ordenado de la Z a la A', () => {
      const nombres = [
-      {name:"Christian"}, {name: "Luisa"}, {name: "Maria"}  
+      {name:"Christian"}, {name: "Maria"}, {name: "Luisa"},  {name: "Maria"}  
     ]
-    const resultado = [{name: "Maria"}, {name: "Luisa"}, {name: "Christian"}]  
+    const resultado = [{name: "Maria"}, {name: "Maria"}, {name: "Luisa"}, {name: "Christian"}]  
     expect(ordenarZa(nombres)).toEqual(resultado)
    })
  })
+
  describe('nombres', () => {
   it('Debería ser una function', () => {
     expect(typeof nombres).toBe('function');
   });
+  it('Deberia retornar la información de lo que solicita en el input', () => {
+    const data = {
+      pokemon: [
+      {name:"Christian"}, {name: "Maria"}, {name: "Luisa"}
+    ]}
+    const busqueda = "Maria";
+    const resultado = [{name:"Maria"}];
+    expect(nombres(data, busqueda)).toEqual(resultado)
+  })
 });
