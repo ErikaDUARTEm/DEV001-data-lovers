@@ -1,5 +1,5 @@
 import pokemon from '../src/data/pokemon/pokemon.js';
-import {arrayD, nombres, ordenarAz, ordenarZa} from '../src/data.js';
+import {arrayD, filterTipos, nombres, ordenarAz, ordenarZa} from '../src/data.js';
 
 describe('arrayD', () => {
   it('Debería ser una function', () => {
@@ -48,5 +48,21 @@ describe('ordenarAz', () => {
     const busqueda = "Maria";
     const resultado = [{name:"Maria"}];
     expect(nombres(data, busqueda)).toEqual(resultado)
+  })
+});
+describe('filterTipos', () => {
+  it('Debería ser una function', () => {
+    expect(typeof filterTipos).toBe('function');
+  });
+  it('Deberia retornar la opción que se selecciona', () => {
+    const data = {
+      pokemon: [
+      {name:"Christian",type:["water", "ice"]}, 
+      {name: "Maria", type:["fire","flying"]}, 
+      {name: "Luisa", type:["rock","water"]}
+    ]}
+    let selección = "water";
+    const resultado = [{name:"Christian",type:["water", "ice"]}, {name: "Luisa", type:["rock","water"]}];
+    expect(filterTipos(data, selección)).toEqual(resultado)
   })
 });

@@ -39,8 +39,9 @@ const nombres = function(data, input) {
    })
    return todos;
 }
-const filterTipos =  function(data, input) {
-  let todos = data.pokemon.filter( type => { 
+const filterTipos = (data, input)=> {
+  let datosTipos = data.pokemon;
+  let todos = datosTipos.filter( type => { 
      let todas = (type.type[0] === input || (type.type[1] === input));
      return todas;
  })

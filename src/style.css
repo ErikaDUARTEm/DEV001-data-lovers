@@ -27,7 +27,7 @@ main {
   animation: encabezado 1s ease-in-out infinite alternate;
   -webkit-animation: encabezado 1s ease-in-out infinite alternate;
 }
-@-webkit-keyframes encabezado {
+@keyframes encabezado {
   from {
     box-shadow: 0 0 10px rgb(245, 247, 126), 0 0 20px rgb(235, 243, 120), 0 0 30px #5780f1, 0 0 40px #214097, 0 0 50px #111ed8, 0 0 60px #092b75, 0 0 70px #020f46;
   }
@@ -57,7 +57,7 @@ main {
   -o-border-radius: 5;
   box-shadow: 8px 8px 8px #3308677b;
 }
-@-webkit-keyframes card {
+@keyframes card {
   from {
     box-shadow: 0 0 5px rgb(245, 247, 126), 0 0 10px rgb(235, 243, 120), 0 0 15px #5780f1, 0 0 20px #214097, 0 0 25px #111ed8, 0 0 30px #092b75, 0 0 35px #020f46;
   }
