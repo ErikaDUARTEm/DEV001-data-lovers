@@ -1,12 +1,10 @@
-import pokemon from './data/pokemon/pokemon.js';
-const data = pokemon;
-export const datos2= data.pokemon;
 
-function arrayD() {
+function arrayD(data) {
    const datos = data.pokemon;
    return datos;
 }
-const ordenarAz = (arrayAOrdenar = datos2) => {
+const ordenarAz = (data) => {
+  let arrayAOrdenar= data;
   const ordenar = arrayAOrdenar.sort((a, b) =>{
     if(a.name < b.name) {
       return -1;
@@ -19,7 +17,8 @@ const ordenarAz = (arrayAOrdenar = datos2) => {
   });
   return ordenar;
 }
-const ordenarZa = (arrayDesordenar = datos2) => {
+const ordenarZa = (data) => {
+  let arrayDesordenar = data;
   const ordenar = arrayDesordenar.sort((a, b) =>{
     if(a.name > b.name) {
       return -1;
@@ -33,5 +32,21 @@ const ordenarZa = (arrayDesordenar = datos2) => {
   return ordenar;
 }
 
+const nombres = function(data, input) {
+  let datosNombres = data.pokemon;
+  let todos = datosNombres.filter( name => {
+     return name.name === input;
+   })
+   return todos;
+}
+const filterTipos = (data, input)=> {
+  let datosTipos = data.pokemon;
+  let todos = datosTipos.filter( type => { 
+     let todas = (type.type[0] === input || (type.type[1] === input));
+     return todas;
+ })
+  return todos;
+}
 
-export {arrayD, ordenarAz, ordenarZa};
+
+export {arrayD, ordenarAz, ordenarZa, nombres,filterTipos};

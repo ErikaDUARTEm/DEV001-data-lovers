@@ -6,22 +6,32 @@
     <title>Pokémon</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="img/pokeball-png-45350-Windows.ico"/>
+    <script src="https://kit.fontawesome.com/3f2bb582c9.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
       <section class="encabezado" id="home">
          <header id="header"></header>
-         
       </section>
-      <section class="botones" >
+      <section class="botones">
         <nav><a href="#home"><img src="img/pokebola.png" alt="#home" class="home"></a></nav>
+        <input type="search" class="buscador" id="buscador" placeholder="Busca por Nombre y press Enter">
         <button type="button" class="ordenar">Ordenar <br>de la A-Z</button>  
-        <button type="button" class="ordenar2">Ordenar <br>de la Z-A</button> 
-        
+        <button type="button" class="ordenar2">Ordenar <br>de la Z-A</button>
+        <select name="tipos" id="selectorTipos" class="selectorTipos">
+          <option value="" disabled>TIPOS</option>
+          <option value="todos">Todos</option>
+          <option value="grass">Hierba</option>
+          <option value="fire">Fuego</option>
+          <option value="water">Agua</option>
+          <option value="flying">Volador</option>
+          <option value="normal">Normal</option>
+          <option value="electric">Electrico</option>
+          <option value="ground">Terrestre</option>
+        </select>
       </section>
-      <section class="flex">
-       
-      </section>
+      <section class="flex"></section>
+      <section class="flex2"></section>
   </main>
     <div id="root"></div>
     <script src="main.js" type="module"></script>

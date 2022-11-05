@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 *{
   margin:0;
   padding: 0;
@@ -14,7 +16,7 @@ main {
 
 #header {
  width: 100%;
- height: 40vh;
+ height: 35vh;
  background-image: url(img/pok%C3%A9mon.png), linear-gradient(120deg, rgba(239, 239, 199, 0.712) 0%, rgba(103, 191, 235, 0.579) 100%), url(img/pokebola.png);
  background-repeat: no-repeat;
  background-position: top;
@@ -25,7 +27,7 @@ main {
   animation: encabezado 1s ease-in-out infinite alternate;
   -webkit-animation: encabezado 1s ease-in-out infinite alternate;
 }
-@-webkit-keyframes encabezado {
+@keyframes encabezado {
   from {
     box-shadow: 0 0 10px rgb(245, 247, 126), 0 0 20px rgb(235, 243, 120), 0 0 30px #5780f1, 0 0 40px #214097, 0 0 50px #111ed8, 0 0 60px #092b75, 0 0 70px #020f46;
   }
@@ -55,7 +57,7 @@ main {
   -o-border-radius: 5;
   box-shadow: 8px 8px 8px #3308677b;
 }
-@-webkit-keyframes card {
+@keyframes card {
   from {
     box-shadow: 0 0 5px rgb(245, 247, 126), 0 0 10px rgb(235, 243, 120), 0 0 15px #5780f1, 0 0 20px #214097, 0 0 25px #111ed8, 0 0 30px #092b75, 0 0 35px #020f46;
   }
@@ -76,15 +78,16 @@ animation: card 1s ease-in-out infinite alternate;
 }
 .card-body-title {
   text-align: center;
-  font-family:'Carter One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 1px;
   color:#f4f1f8;
   text-shadow:5px 5px 5px #7e05f7;
-  font-size: 20px;
+  font-size: 23px;
 }
 .ordenar, .ordenar2{
-  margin: 5px 10px 10px 30px;
-  width: 200px;
-  height: 60px;
+  margin: 10px 2px 2px 2px;
+  width: 180px;
+  height: 50px;
   border: none;
   border-radius: 30px;
   background-color: #1215d1;
@@ -108,7 +111,6 @@ animation: card 1s ease-in-out infinite alternate;
  position: -webkit-sticky;
  position: sticky;
  top: 0;
- justify-content: flex-start;
 }
 .home{
   width: 70px;;
@@ -116,77 +118,263 @@ animation: card 1s ease-in-out infinite alternate;
   display: flex;
 }
 
+.buscador {
+  width: 50%;
+  height: 50px;
+  background-color: rgb(236, 236, 247);
+  border-radius: 30px;
+  margin: 10px 8px 10px 15px;
+  border: none;
+  box-shadow: 8px 8px 5px #e5fd09c7;
+  text-align: center;
+  font-family:'Carter One', cursive;
+  color:gray;
+  font-size: 17px;
+  justify-content: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.cardTipos{
+  margin: 0 20px 15px 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(33, 208, 208, 0.675);
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  -ms-border-radius: 5;
+  -o-border-radius: 5;
+  box-shadow: 8px 8px 8px #ae0bee7b;
+  font-family: 'Anton', sans-serif;
+  color: #fbfcff;
+  font-size: 20px;  
+  text-shadow: 2px 2px 3px rgb(15, 15, 15);
+  object-fit: cover;
+  }
+.cardTipos-imagen{
+ margin:0 2px 2px 20px;
+ background-color: #2d09fa;
+ width: max-content;
+ height: auto;
+ border-radius: 20px;
+ transform: scaleX(-1);
+}
+.cardTipos-title{
+  margin: 0 2px 2px 8px;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow:5px 5px 5px #7e05f7;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.tipo{
+  margin: 0 2px 2px 8px;
+  width: 100%;
+  height: max-content;
+  border-radius: 5px;
+  background-color: #2d09fa91;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  letter-spacing: 1px;
+  
+} 
+.about{
+  width: 100%;
+  height: 100%;
+  margin: 0 5px 2px 8px;
+  border-radius: 10px;
+  background-color: #2d09fa91;
+  letter-spacing: 1px;
+} 
+.resistencia{
+  background-color: #2d09fa91;
+  border-radius: 5px;
+  margin: 0 2px 2px 8px;
+  width: 100%;
+  height: max-content;
+  color:greenyellow;
+  letter-spacing: 1px;
+}
+.debilidades{
+  background-color: #2d09fa91;
+  margin: 0 2px 2px 8px;
+  border-radius: 5px;
+  width: 100%;
+  height: max-content;
+  color: rgb(231, 66, 16);
+  letter-spacing: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.flex2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+}
+#cerrar{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.selectorTipos{
+  width: 90px;
+  height: 50px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 35px;
+  border: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  box-shadow: 8px 8px 5px #e5fd09c7;
+  text-shadow: 5px 5px 5px #0f0f0fef;
+  font-family:'Carter One', cursive;
+  color:rgb(243, 236, 236);
+  background-color:#1215d1;
+  font-size: 15px;
+  text-align: center;
+}
+.card-body-tipo{
+  color: rgb(69, 39, 6);
+  margin-top: 2px;
+  background-color: rgb(3, 244, 128);
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 @media screen and (max-width:800px){
   
   #header {
-    height: 40vh;
+    height: 33vh;
     justify-content: center;
-    background-size: contain;
+    object-fit: cover;
   } 
   .botones {
-    width: 80%;
-    height: auto;
+    height: 80px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+  }
+ .buscador {
+  width: 80%;
+  height: 40px;
+  margin-top: 0;
  }
  .card{
   margin-top:0;
  }
+ .cardTipos{
+  width: 80%;
+  height: 100%;
+  margin-top: 0;
+  padding: 2px 2px 2px 2px;
 }
-@media screen and (max-width:500px){
-  
-  #header {
-    height: 20vh;
-  } 
-  .botones {
-    width: 80%;
-    height: auto;
-  }
+ .flex{
+  margin-top: 50px;
 }
-@media screen and (max-width:380px){
-  #header {
-    height: 25vh;
-    justify-content: center;
-    background-size: contain;
-  } 
-  .botones {
-    max-width: 80%;
-    height:20px;
-  }
-  .ordenar, .ordenar2{
-    width: 50px;
-    height: 32px;
-    border-radius: 10px;
+.ordenar, .ordenar2{
+    width: 120px;
+    height: 40px;
+    margin: 5px 18px 10px 0;
     font-size: 11px;
     font-family: arial;
     box-shadow: 3px 3px 2px #e5fd09c7;
-  }
-  .home{
-    width: 50px;
+    justify-content: space-around;
+ }
+  .cardTipos-imagen{
+    width: max-content;
+    height: auto;
+    font-size: 10px;
+ }
+   .cardTipos-title{
+     font-size: 25px;
+ }
+   .tipo{
+     width: 80%;
+  } 
+   .about{
+     width: 80%;     
+   } 
+   .resistencia{
+     width: 80%;
+   }
+   .debilidades{
+     width: 80%;
+   }
+   .selectorTipos{
+    width: 100px;
+    height: 38px;
+    margin: 5px 12px 0 8px;
+    padding: 0;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+}
+   .home{
+    width:50px;
     height: 50px;
-  }
-  .card{
-    margin-top:0;
+    margin-left: 0;
   }
 }
-@media screen and (max-width:280px){
-  
+@media screen and (max-width:500px){
   #header {
     width: 100%;
-    height: 20vh;
-    justify-content: center;
-    background-size: contain;
-  }  
+    height: 25vh;
+    background-size: contain;;
+  }
   .botones {
-    width: 80%;
-    height: auto;
+    height: max-content;
+    position: -webkit-sticky;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
   }
-  .ordenar, .ordenar2{
-    width: 50px;
-    height: 32px;
-    border-radius: 5px;
-    font-size: 10px;
-    font-family: arial;
-    justify-content: center;
-    box-shadow: 3px 3px 2px #e5fd09c7;
-    justify-items: right;
+   .cardTipos{
+     width: 80%;
+     height: 100%;
+     margin-top: 0;
+     padding: 2px 2px 2px 2px;
   }
+    .buscador{
+     width: 78%;
+     height: 30px;
+     margin: 5px 10px 0 0;
+     justify-content: center;
+     align-items: center;
+    }
+    .selectorTipos{
+      width: 78px;
+      height: 38px;
+      margin: 10px 10px 0 8px;
+      padding: 0;
+      border-radius: none;
+      -webkit-border-radius: none;
+      -moz-border-radius: none;
+      -ms-border-radius: none;
+      -o-border-radius: none;
+}
+    .home{
+      width:40px;
+      height: 40px;
+      margin-left: 0;
+    }
+    .ordenar, .ordenar2{
+      width: 70px;
+      height: 38px;
+      margin: 10px 10px 10px 8px;
+    }
 }
