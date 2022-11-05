@@ -63,6 +63,7 @@ const tarjetasDetalles = (pokemon) => {
    </article>`
    return(cardtipos);
  }
+ 
 const buscador = $(".buscador");
 // Esta funcion es para que al darle click a la X de la tarjeta detallada, cierre y envie a todos las tarjetas.
 const cards = ()=>{
@@ -70,9 +71,11 @@ const cards = ()=>{
       arrayD(pokemon).forEach (element => {
       $(".flex2").innerHTML ="";
       $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
+      buscador.value = "";
       })
-   });
-  };
+   })
+  }
+  
   // funcion que llama al filtro nombres y lo conecta con la barra buscadora.
 const nombres2 = () => {
    let input= buscador.value.toLowerCase();
@@ -83,9 +86,8 @@ const nombres2 = () => {
     })
     if(nombres(pokemon,input).length === 1){
       cards();
-    }
-   };
-
+     }
+   }
   $(".buscador").addEventListener("keydown", nombres2);
   //Filtro por tipo hierba 
   const tarjetasTipos = (pokemon) => {
@@ -121,9 +123,3 @@ const nombres2 = () => {
     })
     cerrarTipos();
  })
-
-  /* if(valorOpciones == "grass"){
-          filterTipos(pokemon, valorOpciones).forEach(element =>  {
-             $(".flex").innerHTML="";
-             $(".flex2").insertAdjacentHTML("beforeend", tarjetasTipos(element));
-       });*/   

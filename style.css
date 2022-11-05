@@ -160,7 +160,6 @@ animation: card 1s ease-in-out infinite alternate;
  width: max-content;
  height: auto;
  border-radius: 20px;
- transform: scaleX(-1);
 }
 .cardTipos-title{
   margin: 0 2px 2px 8px;
@@ -263,6 +262,7 @@ animation: card 1s ease-in-out infinite alternate;
   } 
   .botones {
     height: 80px;
+    margin-top: 5px;
     display: flex;
     flex-wrap:wrap;
     flex-direction: row-reverse;
@@ -271,6 +271,7 @@ animation: card 1s ease-in-out infinite alternate;
   width: 80%;
   height: 40px;
   margin-top: 0;
+  box-shadow: 4px 4px 3px #e5fd09c7;
  }
  .card{
   margin-top:0;
@@ -294,9 +295,10 @@ animation: card 1s ease-in-out infinite alternate;
     justify-content: space-around;
  }
   .cardTipos-imagen{
-    width: max-content;
+    width: 120px;
     height: auto;
     font-size: 10px;
+
  }
    .cardTipos-title{
      font-size: 25px;
@@ -319,10 +321,9 @@ animation: card 1s ease-in-out infinite alternate;
     margin: 5px 12px 0 8px;
     padding: 0;
     border-radius: none;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    -ms-border-radius: none;
-    -o-border-radius: none;
+    font-size: 11px;
+    font-family: arial;
+    box-shadow: 3px 3px 2px #e5fd09c7;
 }
    .home{
     width:50px;
