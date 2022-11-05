@@ -111,7 +111,6 @@ animation: card 1s ease-in-out infinite alternate;
  position: -webkit-sticky;
  position: sticky;
  top: 0;
- justify-content: flex-start;
 }
 .home{
   width: 70px;;
@@ -120,7 +119,7 @@ animation: card 1s ease-in-out infinite alternate;
 }
 
 .buscador {
-  width: 30%;
+  width: 50%;
   height: 50px;
   background-color: rgb(236, 236, 247);
   border-radius: 30px;
@@ -213,89 +212,6 @@ animation: card 1s ease-in-out infinite alternate;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-
-@media screen and (max-width:800px){
-  
-  #header {
-    height: 40vh;
-    justify-content: center;
-    object-fit: cover;
-  } 
-  .botones {
-    width: 100%;
-    height: 50px;
- }
- .buscador {
-  width: 40%;
-  height: auto;
-  margin-top: 0;
- }
- .card{
-  margin-top:0;
- }
- .cardTipos{
-  width: 80%;
-  height: 100%;
-  margin-top: 0;
-  padding: 2px 2px 2px 2px;
-  
-}
- .flex{
-  margin-top: 30px;
-}
-  .ordenar, .ordenar2{
-    width: 65px;
-    height: 50px;
-    margin-left: 3px;
-    border-radius: 10px;
-    font-size: 11px;
-    font-family: arial;
-    box-shadow: 3px 3px 2px #e5fd09c7;
-}
-  .cardTipos-imagen{
-    width: max-content;
-    height: auto;
-    font-size: 10px;
- }
-   .cardTipos-title{
-     font-size: 25px;
- }
-   .tipo{
-     width: 80%;
-  } 
-   .about{
-     width: 80%;     
-   } 
-   .resistencia{
-     width: 80%;
-   }
-   .debilidades{
-     width: 80%;
-   }
-}
-@media screen and (max-width:500px){
-  body{
-    justify-content: center;
-    align-items: center;
-    
-  }
-  #header {
-    width: 100%;
-    height: 30vh;
-    
-  }
-  .botones {
-    width: 80%;
-    height: 50px;
-    position: static;
- }
-.cardTipos{
-  width: 80%;
-  height: 100%;
-  margin-top: 0;
-  padding: 2px 2px 2px 2px;
-  }
-}
 .flex2{
   display: flex;
   flex-wrap: wrap;
@@ -337,4 +253,128 @@ animation: card 1s ease-in-out infinite alternate;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media screen and (max-width:800px){
+  
+  #header {
+    height: 33vh;
+    justify-content: center;
+    object-fit: cover;
+  } 
+  .botones {
+    height: 80px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+  }
+ .buscador {
+  width: 80%;
+  height: 40px;
+  margin-top: 0;
+ }
+ .card{
+  margin-top:0;
+ }
+ .cardTipos{
+  width: 80%;
+  height: 100%;
+  margin-top: 0;
+  padding: 2px 2px 2px 2px;
+}
+ .flex{
+  margin-top: 50px;
+}
+.ordenar, .ordenar2{
+    width: 120px;
+    height: 40px;
+    margin: 5px 18px 10px 0;
+    font-size: 11px;
+    font-family: arial;
+    box-shadow: 3px 3px 2px #e5fd09c7;
+    justify-content: space-around;
+ }
+  .cardTipos-imagen{
+    width: max-content;
+    height: auto;
+    font-size: 10px;
+ }
+   .cardTipos-title{
+     font-size: 25px;
+ }
+   .tipo{
+     width: 80%;
+  } 
+   .about{
+     width: 80%;     
+   } 
+   .resistencia{
+     width: 80%;
+   }
+   .debilidades{
+     width: 80%;
+   }
+   .selectorTipos{
+    width: 100px;
+    height: 38px;
+    margin: 5px 12px 0 8px;
+    padding: 0;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+}
+   .home{
+    width:50px;
+    height: 50px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:500px){
+  #header {
+    width: 100%;
+    height: 25vh;
+    background-size: contain;;
+  }
+  .botones {
+    height: max-content;
+    position: -webkit-sticky;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+  }
+   .cardTipos{
+     width: 80%;
+     height: 100%;
+     margin-top: 0;
+     padding: 2px 2px 2px 2px;
+  }
+    .buscador{
+     width: 78%;
+     height: 30px;
+     margin: 5px 10px 0 0;
+     justify-content: center;
+     align-items: center;
+    }
+    .selectorTipos{
+      width: 78px;
+      height: 38px;
+      margin: 10px 10px 0 8px;
+      padding: 0;
+      border-radius: none;
+      -webkit-border-radius: none;
+      -moz-border-radius: none;
+      -ms-border-radius: none;
+      -o-border-radius: none;
+}
+    .home{
+      width:40px;
+      height: 40px;
+      margin-left: 0;
+    }
+    .ordenar, .ordenar2{
+      width: 70px;
+      height: 38px;
+      margin: 10px 10px 10px 8px;
+    }
 }
