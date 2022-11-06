@@ -124,3 +124,24 @@ $("#selectorTipos").addEventListener("change", () =>{
     })
    cerrarTipos();
  })
+/*if(valorOpciones == "grass"){
+   $(".card-body-tipo").classList.remove(".letras");
+ }else if(valorOpciones == "fire"){
+   $(".card-body-tipo").classList.remove(".letras");
+   $(".card-body-tipo").classList.add("orange");
+ }else if(valorOpciones == "water"){
+   $(".card-body-tipo").classList.remove(".letras");
+   $(".card-body-tipo").classList.add("blue");
+ }else if(valorOpciones == "flying"){
+   $(".card-body-tipo").classList.remove(".letras");
+   $(".card-body-tipo").classList.add("white");
+ }else if(valorOpciones == "normal"){
+   $(".card-body-tipo").classList.remove(".letras");
+   $(".card-body-tipo").classList.add("purple");
+ }else if(valorOpciones == "electric"){
+   $(".card-body-tipo").classList.remove(".letras");
+   $(".card-body-tipo").classList.add("yellow");
+ }else {
+   $(".card-body-tipo").classList.remove(".letras");
+   $(".card-body-tipo").classList.add("brown");
+ }*/
