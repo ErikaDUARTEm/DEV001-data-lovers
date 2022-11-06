@@ -399,7 +399,7 @@ animation: card 1s ease-in-out infinite alternate;
   background-color: rgb(5, 247, 5);
 }
 .orange{
-  background-color: orangered;
+  background-color: rgb(255, 69, 0)
 }
 .blue{
   background-color: rgb(7, 90, 244);
