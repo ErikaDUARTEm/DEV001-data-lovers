@@ -139,7 +139,7 @@ animation: card 1s ease-in-out infinite alternate;
 .cardTipos{
   margin: 0 20px 15px 20px;
   padding: 20px 20px 20px 20px;
-  background-color: rgba(33, 208, 208, 0.675);
+  background-color: rgba(4, 251, 251, 0.76);
   width: 40%;
   height: 100%;
   border-radius: 10px;
@@ -156,7 +156,7 @@ animation: card 1s ease-in-out infinite alternate;
   }
 .cardTipos-imagen{
  margin:0 2px 2px 20px;
- background-color: #2d09fa;
+ background-color: #3b1bf276;
  width: max-content;
  height: auto;
  border-radius: 20px;
@@ -173,7 +173,7 @@ animation: card 1s ease-in-out infinite alternate;
   width: 100%;
   height: max-content;
   border-radius: 5px;
-  background-color: #2d09fa91;
+  background-color: #2d0af6;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -186,11 +186,15 @@ animation: card 1s ease-in-out infinite alternate;
   height: 100%;
   margin: 0 5px 2px 8px;
   border-radius: 10px;
-  background-color: #2d09fa91;
+  background-color: #2d0af6;
   letter-spacing: 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 } 
 .resistencia{
-  background-color: #2d09fa91;
+  background-color: #2d0af6;
   border-radius: 5px;
   margin: 0 2px 2px 8px;
   width: 100%;
@@ -199,12 +203,12 @@ animation: card 1s ease-in-out infinite alternate;
   letter-spacing: 1px;
 }
 .debilidades{
-  background-color: #2d09fa91;
+  background-color: #2d0af6;
   margin: 0 2px 2px 8px;
   border-radius: 5px;
   width: 100%;
   height: max-content;
-  color: rgb(231, 66, 16);
+  color: rgb(244, 86, 189);
   letter-spacing: 1px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -235,7 +239,7 @@ animation: card 1s ease-in-out infinite alternate;
   box-shadow: 8px 8px 5px #e5fd09c7;
   text-shadow: 5px 5px 5px #0f0f0fef;
   font-family:'Carter One', cursive;
-  color:rgb(243, 236, 236);
+  color:rgb(245, 246, 239);
   background-color:#1215d1;
   font-size: 15px;
   text-align: center;
@@ -245,7 +249,7 @@ animation: card 1s ease-in-out infinite alternate;
   margin-top: 2px;
   background-color: rgb(3, 244, 128);
   font-size: 20px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Carter One', cursive;
   border-radius: 10px;
   text-align: center;
   -webkit-border-radius: 10px;
@@ -280,11 +284,11 @@ animation: card 1s ease-in-out infinite alternate;
   width: 80%;
   height: 100%;
   margin-top: 0;
-  padding: 2px 2px 2px 2px;
-}
+  padding: 2px 2px 2px 8px;
+ }
  .flex{
   margin-top: 50px;
-}
+ }
 .ordenar, .ordenar2{
     width: 120px;
     height: 40px;
@@ -304,17 +308,17 @@ animation: card 1s ease-in-out infinite alternate;
      font-size: 25px;
  }
    .tipo{
-     width: 80%;
-  } 
+     width: 90%;
+ } 
    .about{
-     width: 80%;     
-   } 
+     width: 90%;     
+ } 
    .resistencia{
-     width: 80%;
-   }
+     width: 90%;
+ }
    .debilidades{
-     width: 80%;
-   }
+     width: 90%;
+ }
    .selectorTipos{
     width: 100px;
     height: 38px;
@@ -324,39 +328,39 @@ animation: card 1s ease-in-out infinite alternate;
     font-size: 11px;
     font-family: arial;
     box-shadow: 3px 3px 2px #e5fd09c7;
-}
+ }
    .home{
     width:50px;
     height: 50px;
     margin-left: 0;
-  }
+ }
 }
 @media screen and (max-width:500px){
   #header {
     width: 100%;
     height: 25vh;
     background-size: contain;;
-  }
+ }
   .botones {
-    height: max-content;
+    height: 80px;
     position: -webkit-sticky;
     display: flex;
     flex-wrap:wrap;
     flex-direction: row-reverse;
-  }
+ }
    .cardTipos{
      width: 80%;
      height: 100%;
      margin-top: 0;
      padding: 2px 2px 2px 2px;
-  }
+ }
     .buscador{
      width: 78%;
      height: 30px;
      margin: 5px 10px 0 0;
      justify-content: center;
      align-items: center;
-    }
+ }
     .selectorTipos{
       width: 78px;
       height: 38px;
@@ -367,15 +371,49 @@ animation: card 1s ease-in-out infinite alternate;
       -moz-border-radius: none;
       -ms-border-radius: none;
       -o-border-radius: none;
-}
+ }
     .home{
       width:40px;
       height: 40px;
       margin-left: 0;
-    }
+ }
     .ordenar, .ordenar2{
       width: 70px;
       height: 38px;
       margin: 10px 10px 10px 8px;
-    }
+ }
+    .tipo{
+      width: 90%;
+ } 
+    .about{
+      width: 90%;     
+ } 
+    .resistencia{
+      width: 90%;
+ }
+    .debilidades{
+      width: 90%;
+ }
+}
+.green {
+  background-color: rgb(5, 247, 5);
+}
+.orange{
+  background-color: orangered;
+}
+.blue{
+  background-color: rgb(7, 90, 244);
+}
+.white{
+  background-color: rgb(65, 59, 59);
+}
+.purple{
+  background-color: rgb(99, 0, 99);
+}
+.yellow{
+  background-color: rgb(217, 197, 10);
+}
+.brown{
+  background-color: rgb(82, 43, 3);
+  color:beige;
 }
