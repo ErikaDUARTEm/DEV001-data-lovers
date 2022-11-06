@@ -115,12 +115,13 @@ const cerrarTipos = () => {
  }
 }
 //evento que se activa al seleccionar el tipo
-$("#selectorTipos").addEventListener("change", () =>{
+$("#selectorTipos").addEventListener("change", ()=>{
    $(".flex2").innerHTML="";
    let valorOpciones = $("#selectorTipos").value;
    filterTipos(pokemon, valorOpciones).forEach(element => {
        $(".flex").innerHTML="";
        $(".flex2").insertAdjacentHTML("beforeend",tarjetasTipos(element));
-    })
-   cerrarTipos();
- })
+  })
+  cerrarTipos();
+});
+ 
