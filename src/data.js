@@ -1,4 +1,3 @@
-
 function arrayD(data) {
    const datos = data.pokemon;
    return datos;
@@ -8,10 +7,10 @@ const ordenarAz = (data) => {
   const ordenar = arrayAOrdenar.sort((a, b) =>{
     if(a.name < b.name) {
       return -1;
-    }
+  }
     if (a.name > b.name){
       return 1;
-    } else {
+  } else {
       return 0;
      }
   });
@@ -22,13 +21,13 @@ const ordenarZa = (data) => {
   const ordenar = arrayDesordenar.sort((a, b) =>{
     if(a.name > b.name) {
       return -1;
-    }
+  }
     if (a.name < b.name){
       return 1;
-    } else {
+  } else {
       return 0;
-     }
-  });
+   }
+ });
   return ordenar;
 }
 
@@ -36,7 +35,7 @@ const nombres = function(data, input) {
   let datosNombres = data.pokemon;
   let todos = datosNombres.filter( name => {
      return name.name === input;
-   })
+  })
    return todos;
 }
 const filterTipos = (data, input)=> {
