@@ -14,7 +14,7 @@ const tarjetas = (pokemon) => {
    </div>
    </article>`
    return(card);
-}
+};
 // recorre data y crea las tarjetas de la pantalla principal
 arrayD(pokemon).forEach(element => {   
    $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));  
@@ -61,10 +61,10 @@ const tarjetasDetalles = (pokemon) => {
    </div>
    </article>`
    return(cardtipos);
-}
- 
+};
 const buscador = $(".buscador");
-// Esta funcion es para que al darle click a la X de la tarjeta detallada, cierre y envie a todos las tarjetas.
+// Esta funcion es para que al darle click a la X de la tarjeta detallada, cierre 
+//y envie a pantalla principal además de borrar el search.
 const cards = ()=>{
   $("#cerrar").addEventListener("click", ()=>{
     arrayD(pokemon).forEach (element => {
@@ -73,8 +73,7 @@ const cards = ()=>{
     buscador.value = "";
     })
   })
-}
-  
+}; 
 // funcion que llama al filtro nombres y lo conecta con la barra buscadora.
 const nombres2 = () => {
   let input= buscador.value.toLowerCase();
@@ -86,9 +85,9 @@ const nombres2 = () => {
    if(nombres(pokemon,input).length === 1){
      cards();
   }
-}
+};
 $(".buscador").addEventListener("keydown", nombres2);
-//Filtro por tipo hierba 
+//Tarjeta que muestra a el pokémon con su tipo
 const tarjetasTipos = (pokemon) => {
 const card =`
   <article class="card">
@@ -103,8 +102,8 @@ const card =`
   </div>
   </article>`
    return(card);
-}
-//para cerrar la tarjeta detallada
+};
+//hace que al seleccionar en el select de tipos opcion todos se devuelva a la pantalla principal
 const cerrarTipos = () => {
   let valorTodos = $("#selectorTipos").value;
   if(valorTodos == "todos"){
@@ -113,7 +112,7 @@ const cerrarTipos = () => {
       $(".flex").insertAdjacentHTML("beforeend", tarjetas(element));
   })
  }
-}
+};
 //evento que se activa al seleccionar el tipo
 $("#selectorTipos").addEventListener("change", ()=>{
    $(".flex2").innerHTML="";
@@ -124,4 +123,3 @@ $("#selectorTipos").addEventListener("change", ()=>{
   })
   cerrarTipos();
 });
- 
