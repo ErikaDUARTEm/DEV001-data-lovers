@@ -11,20 +11,22 @@
 ![Versión Desktop](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/Prototipo%20de%20baja%20fidelidad%20Hu2%20(1).jpg)
 ![Versión Móvil](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/Prototipo%20de%20baja%20fidelidad%20Movil%20Hu2%20(1).jpg)
 ## 5. Prototipo de alta fidelidad Versión 1.2.
-[Prototipo Versión Desktop y Móvil alta fidelidad en figma](https://www.figma.com/file/tJoTR46xS2WLpiRwyRjAUp/POKEMON-HU2?node-id=1%3A32)
+[Prototipo Versión Desktop alta fidelidad en figma](https://www.figma.com/file/tJoTR46xS2WLpiRwyRjAUp/POKEMON-HU2?node-id=1%3A32)
+[Móvil](https://www.figma.com/file/tJoTR46xS2WLpiRwyRjAUp/POKEMON-HU2?node-id=1%3A34)
 ## 6. Prototipo de baja fidelidad Versión 1.3.
 ![versión Desktop](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipo%20desktop%20baja%20fidelidad%20HU3_1.jpg)
 ## 7. Prototipo móvil de baja fidelidad Versión 1.3.
 ![versión móvil](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipo%20movil%20baja%20fidelidad%20HU3_3.jpg)
 ## 8. Prototipo de alta fidelidad Versión 1.3.
-[Prototipo Versión Desktop y Móvil alta fidelidad en figma](https://www.figma.com/file/5385EnnMNq0hrbOAadsxpT/pokemon-HU3?node-id=1%3A48)
+[Prototipo Versión Desktop y Móvil alta fidelidad en figma](https://www.figma.com/file/5385EnnMNq0hrbOAadsxpT/pokemon-HU3?node-id=0%3A1)
+[móvil](https://www.figma.com/file/5385EnnMNq0hrbOAadsxpT/pokemon-HU3?node-id=1%3A50)
 ## 9. Prototipo desktop de baja fidelidad Versión 1.4.
 ![versión Desktop](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipo%20desktop%20baja%20fidelidad%20HU4.jpg)
 ## 10. Prototipo móvil de baja fidelidad Versión 1.4.
 ![versión móvil](https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-data-lovers/main/src/img/prototipo%20movil%20baja%20fidelidad%20HU4.jpg)
 ## 11. Prototipo de alta fidelidad Versión 1.4.
 [Prototipo Versión Desktop y Móvil alta fidelidad en figma](https://www.figma.com/file/HQ6YVM4fyLNvBcmx0xBbye/pokemon-Hu4?node-id=0%3A1)
-
+[móvil](https://www.figma.com/file/HQ6YVM4fyLNvBcmx0xBbye/pokemon-Hu4?node-id=1%3A33)
 ## 12. Resumen del producto.
   Podrás conocer los 250 pokemones que existen sin ningún orden en específico. 
 
