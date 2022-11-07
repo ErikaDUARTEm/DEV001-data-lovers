@@ -43,5 +43,5 @@
 ## 17. Actualización versión 1.2 a versión 1.3.
    Se agrego una entrada de busqueda por nombre, en donde podrás introducir el nombre del pokémon del que desees más información, y te mostrará una tarjeta con la información básica de ese pokémon, incluyendo imagen, nombre, número, tipo, fortalezas, delibilidades y una descripción.
 
-## 18. Actualización versión 1.2 a versión 1.4.
+## 18. Actualización versión 1.3 a versión 1.4.
    Se agrego un selector de tipo para mostrar todos los pokémon de acuerdo a su tipo, donde si seleccionas la opción hierba te mostrará todos los pokémon de tipo hierba y así con el resto de tipos. 
